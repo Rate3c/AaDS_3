@@ -6,19 +6,19 @@ int main() {
     tree a;
     cout << "Filling the tree with elements" << endl;
 
-    a.insert(22);
-    a.insert(9);
-    a.insert(23);
-    a.insert(3);
+    a.insert(33);
+    a.insert(20);
+    a.insert(34);
+    a.insert(14);
+    a.insert(35);
+    a.insert(16);
     a.insert(24);
-    a.insert(5);
-    a.insert(13);
-    a.insert(11);
+    a.insert(22);
+    a.insert(26);
     a.insert(15);
-    a.insert(4);
-    a.insert(6);
+    a.insert(17);
 
-    a.remove(9);
+    a.remove(20);
 
     cout << "Deeper traversal of the tree: " << endl;
 
