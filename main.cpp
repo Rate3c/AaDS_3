@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     tree a;
-    cout << "Filling the tree with elements" << endl;
+    cout << "Filling the tree with elements." << endl << endl;
 
     a.insert(33);
     a.insert(20);
@@ -20,20 +20,21 @@ int main() {
 
     a.remove(20);
 
-    cout << "Deeper traversal of the tree: " << endl;
+    cout << "Depth tree traversal: "<< endl;
 
     Iterator* tree_iterator_stack = a.create_dft_iterator();
     while (tree_iterator_stack->has_next()) {
         cout << tree_iterator_stack->next() << ' ';
     }
-    cout << endl;
+    cout << endl << endl;
 
-    cout << "Traversing the tree in breadth: " << endl;
+    cout << "Breadth tree traversal: " << endl;
 
     Iterator* tree_iterator_queue = a.create_bft_iterator();
     while (tree_iterator_queue->has_next()) {
         cout << tree_iterator_queue->next() << ' ';
     }
+    cout << endl;
 
     return 0;
 }
